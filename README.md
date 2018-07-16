@@ -1,9 +1,7 @@
-# ld-preload-open
-Library to map files or directories to another location, for use with LD_PRELOAD.
-For example if an application tries to open files in `/etc/ownCloud/`, but you want it
-to open the same file from `/home/user1/.etc/ownCloud/` instead.
+My fork of [fritzw/ld-preload-open](https://github.com/fritzw/ld-preload-open), all I've done is change the paths.
 
-Simply adjust the paths you want to map in the `.c` file and compile with `make`.
-Then start your program with the following command:
+I'm using this to keep some programs from wasting disk I/O on meaningless stuff and get them to (mostly) comply with the [XDG Basedir Spec](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
 
-    LD_PRELOAD=/path/to/my/path-mapping.so someprogram
+I currently use this by adding `export LD_PRELOAD='/home/runningdroid/git/ld-preload-open/path-mapping_${LIB}.so'` to my xinitrc
+
+[Archwiki:XDG Base Directory support](https://wiki.archlinux.org/index.php/XDG_Base_Directory_support)

@@ -13,7 +13,19 @@
 // List of path pairs. Paths beginning with the first item will be
 // translated by replacing the matching part with the second item.
 static const char *path_map[][2] = {
-    { "/etc/ownCloud/", "/home/user1/.etc/ownCloud/" },
+    { "/home/runningdroid/.recently-used", "/run/user/1000/recently-used" },
+    { "/home/runningdroid/Desktop", "/run/user/1000/Desktop" },
+    { "/home/runningdroid/.thumbnails", "/run/user/1000/thumbnails" },
+    { "/home/runningdroid/.gstreamer-0.10", "/run/user/1000/gstreamer-0.10" },
+    { "/home/runningdroid/.dbus", "/run/user/1000/dbus" },
+    { "/home/runningdroid/.npm", "/run/user/1000/npm" },
+    { "/home/runningdroid/.java", "/run/user/1000/java" },
+    { "/home/runningdroid/.oracle_jre_usage", "/run/user/1000/oracle_jre_usage" },
+    { "/home/runningdroid/.QtWebEngineProcess", "/run/user/1000/QtWebEngineProcess" },
+    { "/home/runningdroid/.QupZilla", "/run/user/1000/QupZilla" },
+    { "/home/runningdroid/.gnome", "/run/user/1000/gnome" },
+    { "/home/runningdroid/.texlive", "/run/user/1000/texlive" },
+    { "/home/runningdroid/.subversion", "/run/user/1000/subversion" },
 };
 
 __thread char *buffer = NULL;
