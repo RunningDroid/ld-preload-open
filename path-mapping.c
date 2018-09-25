@@ -18,7 +18,6 @@ static const char *path_map[][2] = {
     { "/home/runningdroid/.thumbnails", "/run/user/1000/thumbnails" },
     { "/home/runningdroid/.gstreamer-0.10", "/run/user/1000/gstreamer-0.10" },
     { "/home/runningdroid/.dbus", "/run/user/1000/dbus" },
-    { "/home/runningdroid/.npm", "/run/user/1000/npm" },
     { "/home/runningdroid/.java", "/run/user/1000/java" },
     { "/home/runningdroid/.oracle_jre_usage", "/run/user/1000/oracle_jre_usage" },
     { "/home/runningdroid/.QtWebEngineProcess", "/run/user/1000/QtWebEngineProcess" },
